@@ -48,7 +48,8 @@ MaskFormatter formatCel = null;
 JLabel txtCaixasex = new JLabel("Sexo");
 private JRadioButton[] sexo = new JRadioButton[2];
 
-JButton btncad = new JButton("Cadastrar");
+JButton btnsalv = new JButton("Salvar");
+JButton btnimp = new JButton("Imprimir");
 JButton btnlim = new JButton("Limpar");
 	
 	public Cadrastro(){
@@ -187,10 +188,13 @@ JButton btnlim = new JButton("Limpar");
 		paine.add(txtCPF);// caixa
 		txtCPF.setBounds(80,350,140,20);
 		
-		paine.add(btncad);// label
-		btncad.setBounds(90,400,100,40);
+		paine.add(btnsalv);
+		btnsalv.setBounds(90,400,100,40);
 		
-		paine.add(btnlim);// label
+		paine.add(btnimp);
+		btnimp.setBounds(90,450,100,40);
+		
+		paine.add(btnlim);
 		btnlim.addActionListener(new ActionListener(){
 			 public void actionPerformed(ActionEvent e){
 				 txtCN.setText("");
