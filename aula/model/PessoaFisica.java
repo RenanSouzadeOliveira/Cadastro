@@ -11,86 +11,90 @@ public class PessoaFisica {
 	public String getnome(){
 		return nome;
 	}
-	
-	public void setEndeteco(String endereco){
-		this.endereco = endereco;
-	}
-	
-	public String getendereco(){
+
+	public String getEndereco() {
 		return endereco;
 	}
-	
-	public void setBairro(String bairro){
-		this.bairro = bairro;
+
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
 	}
-	
-	public String getbairro(){
+
+	public String getBairro() {
 		return bairro;
 	}
-	
-	public void setCEP(String cep){
-		this.cep = cep;
+
+	public void setBairro(String bairro) {
+		this.bairro = bairro;
 	}
-	
-	public String getcep(){
+
+	public String getCep() {
 		return cep;
 	}
-	
-	public void setCidade(String cidade){
-		this.cidade = cidade;
+
+	public void setCep(String cep) {
+		this.cep = cep;
 	}
-	
-	public String getcidade(){
+
+	public String getCidade() {
 		return cidade;
 	}
-	
-	public void setEstado(String estado){
-		this.estado = estado;
+
+	public void setCidade(String cidade) {
+		this.cidade = cidade;
 	}
-	
-	public String getestado(){
+
+	public String getEstado() {
 		return estado;
 	}
-	
-	public void setTelefone(String telefone){
+
+	public void setEstado(String estado) {
+		this.estado = estado;
+	}
+
+	public String getTelefone() {
+		return telefone;
+	}
+
+	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
-	
-	public String gettelefone(){
-		return telefone;
-		
-	}
-	
-	public void setCelular(String celular){
-		this.celular = celular;
-	}
-	
-	public String getcelular(){
+
+	public String getCelular() {
 		return celular;
 	}
-	
-	public void setRg(String rg){
+
+	public void setCelular(String celular) {
+		this.celular = celular;
+	}
+
+	public String getRg() {
+		return rg;
+	}
+
+	public void setRg(String rg) {
 		this.rg = rg;
 	}
-	
-	public String getrg(){
-		return rg;
-		
-	}
-	
-	public void setCPF(String cpf){
-		this.cpf = cpf;
-	}
-	
-	public String getcpf(){
+
+	public String getCpf() {
 		return cpf;
 	}
-	
-	public void setSexo(char sexo){
-		this.sexo = sexo;
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
 	}
-	
-	public char getsexo(){
+
+	public char getSexo() {
 		return sexo;
 	}
+
+	public void setSexo(char sexo) {
+		this.sexo = sexo;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+	
+	
 }

@@ -14,6 +14,8 @@ import javax.swing.JRadioButton;
 import javax.swing.JTextField;
 import javax.swing.text.MaskFormatter;
 
+import model.PessoaFisica;
+
 public class Cadrastro extends JFrame{
 
 JLabel txtCaixa = new JLabel("Nome");
@@ -51,6 +53,8 @@ private JRadioButton[] sexo = new JRadioButton[2];
 JButton btnsalv = new JButton("Salvar");
 JButton btnimp = new JButton("Imprimir");
 JButton btnlim = new JButton("Limpar");
+
+	PessoaFisica pessoafisica = new PessoaFisica();
 	
 	public Cadrastro(){
 		super("Cadastro");
@@ -189,6 +193,21 @@ JButton btnlim = new JButton("Limpar");
 		txtCPF.setBounds(80,350,140,20);
 		
 		paine.add(btnsalv);
+		btnsalv.addActionListener(new ActionListener(){
+			 public void actionPerformed(ActionEvent e){
+				 pessoafisica.setNome(txtCaixa.getText());
+				 pessoafisica.setEndereco(txtCE.getText());
+				 pessoafisica.setBairro(txtCB.getText());
+				 pessoafisica.setCep(txtCP.getText());
+				 pessoafisica.setCidade(txtCI.getText());
+				 pessoafisica.setCpf(txtTE.getText());
+				 pessoafisica.setEndereco(txtCEL.getText());
+				 pessoafisica.setRg(txtRG.getText());
+				 pessoafisica.setCpf(txtCPF.getText());
+				 
+			 }
+		 });
+		
 		btnsalv.setBounds(90,400,100,40);
 		
 		paine.add(btnimp);
