@@ -1,4 +1,4 @@
-package cadastro;
+package view;
 
 import java.awt.Container;
 import java.awt.event.ActionEvent;
